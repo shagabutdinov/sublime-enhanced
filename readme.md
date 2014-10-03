@@ -81,7 +81,9 @@ and [readme-keymap.md](https://github.com/shagabutdinov/sublime-enhanced/blob/ma
 
 - Warnings that should be read before installation: [readme-warning.md](https://github.com/shagabutdinov/sublime-enhanced/blob/master/readme-warning.md)
 
-- For donators: reamde-donations.md
+- For donators: [readme-donations.md](https://github.com/shagabutdinov/sublime-enhanced/blob/master/readme-donations.md)
+
+- Complete plugin list: [readme-list.md](https://github.com/shagabutdinov/sublime-enhanced/blob/master/readme-list.md)
 
 - A bit of explanations of sublime-enhanced: [readme-philosophy.md](https://github.com/shagabutdinov/sublime-enhanced/blob/master/readme-philosophy.md)
 
