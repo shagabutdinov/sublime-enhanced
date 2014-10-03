@@ -92,6 +92,11 @@ and [readme-keymap.md](https://github.com/shagabutdinov/sublime-enhanced/blob/ma
   markdown): [readme-keymap.html](https://github.com/shagabutdinov/sublime-enhanced/blob/master/readme-keymap.html)
 
 
+### License
+
+[The MIT license](https://github.com/shagabutdinov/sublime-enhanced/blob/master/readme-license.md)
+
+
 ### Todo
 
 Packages that I want todo in future:

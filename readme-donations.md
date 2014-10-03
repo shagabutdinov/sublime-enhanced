@@ -21,9 +21,8 @@ This amounts probably will be interesting for companies as sublime-enhanced will
 get more visitors:
 
 - $250 - your company name (or any message) and one line of text under it will
-  be listed at the bottom of main page of each sublime-enhanced repository and
-  to readme-keymap.md (those pages could be accessed quite often to see the
-  keymaps)
+  be listed at the bottom of main page of sublime-enhanced repository (or any
+  repository of sublime-enhanced on your choise)
 
 - $500 - bugfix request will be performed ASAP
 
@@ -36,16 +35,16 @@ get more visitors:
   donator personally during next 6 month of donation if amount covers travel
   expenses;
 
-Please, specify link at your github account so I'll be able to contact you and
-share plugins. If you forgot to do it, than just drop me github message with
-date, time and amount of donation. Please wait 48 hours (I have only two hands)
-before contact me again in a case if I'll not contact you back.
+Please, specify link at your github account when donating so I'll be able to
+contact you and share plugins. If you forgot to do it, then just drop me github
+message with date, time and amount of donation. Please wait 48 hours (I have
+only two hands) before contact me again in a case if I'll not contact you back.
 
 Note if you donate anything more or qual than $50 you'll automatically get
 access to everything above in the list (e.g. if you donate $250, your message
 will be published and you'll get access to two secret plugins).
 
-Note that secret plugins listed above is still open source, released under GPL
+Note that secret plugins listed above is still open source, released under MIT
 license: you will be able to fork it, to publish it or to do whatever you want
 with it. Probably you already can download it (or see description) somewhere in
 internet but it will spoil the game =) Feel free to share secret plugins with
