@@ -49,13 +49,20 @@ everything for free but this does not mean that tips is not expected.
 Please, read [readme-donations.md](https://github.com/shagabutdinov/sublime-enhanced/blob/master/readme-donations.md)
 if you considering making donation.
 
+[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GRYNNLPTV9BRG)
+
+You also can help the project by opening pull requests or issues, or by staring
+plugins you like.
+
 
 ### Installation
 
 - for full installation read [readme-installation.md](https://github.com/shagabutdinov/sublime-enhanced/blob/master/readme-installation.md)
   file
 
-- for cherry-pick plugin:
+- for cherry-pick installation:
+  - install package dependencies (listed in each package in "Dependencies
+    sections") if any
   - open command palette
   - type "install package"
   - enter package name

@@ -1,23 +1,11 @@
 # Please, donate!
 
-Huge peace of arduous work was done to release all plugins. Personally I should
-have stopped developing when I was satisfied how all plugins works. There was no
-installer, no docs, no gifs, no explanations. Plugins copied to another OS's
-didn't worked. I did all this stuff in order to receive donations.
-
-I considered the possibility to make commercial project (like sftp/svn on
-http://wbond.net/sublime_packages). But finally I decided that it will be better
-for all to go with open source and to count on gratitude of those people who
-will like it. If somebody would have done all this work instead of me I would
-have pay for it to be able to use it.
-
 A lot of work was done to to make everything usable together, to write
 docs and explanations of each plugin behavior, to test it under different OS's,
 to make gifs and to spread information about it. And there is still a lot of
 work to do: new plugins, new features to old plugins, adding tests to make
-plugins supportable and a lot of bugfixing and debugging. Without support I'm
-not ready to do that work. I'll probably just fix issues that annoys me
-personally.
+plugins supportable and a lot of bugfixing and debugging. Without support I will
+not be able to do that work.
 
 To say "thank you" for all who donated I'm introducing following benefits to
 everybody who will donate certain amounts:
@@ -48,6 +36,10 @@ get more visitors:
   donator personally during next 6 month of donation if amount covers travel
   expenses;
 
+Please, specify link at your github account so I'll be able to contact you and
+share plugins. If you forgot to do it, than just drop me github message with
+date, time and amount of donation. Please wait 48 hours (I have only two hands)
+before contact me again in a case if I'll not contact you back.
 
 Note if you donate anything more or qual than $50 you'll automatically get
 access to everything above in the list (e.g. if you donate $250, your message
@@ -63,3 +55,5 @@ online as it spoil the game (at least for first plugin) for other people.
 For bugfix/feature request: please open a bug request prior to donation and
 wait for my reply ("won't fix" issues will be closed only in forks); when
 you'll donate refer to opened issue in donation message.
+
+[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GRYNNLPTV9BRG)
