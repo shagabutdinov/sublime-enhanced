@@ -87,7 +87,9 @@ and [readme-keymap.md](https://github.com/shagabutdinov/sublime-enhanced/blob/ma
 
 - Main usecases overview: [readme-usage.md](https://github.com/shagabutdinov/sublime-enhanced/blob/master/readme-usage.md)
 
-- Full keymap: [readme-keymap.md](https://github.com/shagabutdinov/sublime-enhanced/blob/master/readme-keymap.md)
+- Full keymap (in order to read it, clone this repo and open file
+  "readme-keymap.html" in browser - full keymap was too large to put it in
+  markdown): [readme-keymap.html](https://github.com/shagabutdinov/sublime-enhanced/blob/master/readme-keymap.html)
 
 
 ### Todo
