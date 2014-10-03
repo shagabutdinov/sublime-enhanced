@@ -1,0 +1,2441 @@
+<html>
+<head>
+  <style>
+    body {
+      border: 1px solid #ddd;
+      outline: 1300px solid #fff;
+      margin: 16px auto;
+    }
+
+    body .markdown-body
+    {
+      padding: 30px;
+    }
+
+    @font-face {
+      font-family: octicons-anchor;
+      src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAYcAA0AAAAACjQAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAABMAAAABwAAAAca8vGTk9TLzIAAAFMAAAARAAAAFZG1VHVY21hcAAAAZAAAAA+AAABQgAP9AdjdnQgAAAB0AAAAAQAAAAEACICiGdhc3AAAAHUAAAACAAAAAj//wADZ2x5ZgAAAdwAAADRAAABEKyikaNoZWFkAAACsAAAAC0AAAA2AtXoA2hoZWEAAALgAAAAHAAAACQHngNFaG10eAAAAvwAAAAQAAAAEAwAACJsb2NhAAADDAAAAAoAAAAKALIAVG1heHAAAAMYAAAAHwAAACABEAB2bmFtZQAAAzgAAALBAAAFu3I9x/Nwb3N0AAAF/AAAAB0AAAAvaoFvbwAAAAEAAAAAzBdyYwAAAADP2IQvAAAAAM/bz7t4nGNgZGFgnMDAysDB1Ml0hoGBoR9CM75mMGLkYGBgYmBlZsAKAtJcUxgcPsR8iGF2+O/AEMPsznAYKMwIkgMA5REMOXicY2BgYGaAYBkGRgYQsAHyGMF8FgYFIM0ChED+h5j//yEk/3KoSgZGNgYYk4GRCUgwMaACRoZhDwCs7QgGAAAAIgKIAAAAAf//AAJ4nHWMMQrCQBBF/0zWrCCIKUQsTDCL2EXMohYGSSmorScInsRGL2DOYJe0Ntp7BK+gJ1BxF1stZvjz/v8DRghQzEc4kIgKwiAppcA9LtzKLSkdNhKFY3HF4lK69ExKslx7Xa+vPRVS43G98vG1DnkDMIBUgFN0MDXflU8tbaZOUkXUH0+U27RoRpOIyCKjbMCVejwypzJJG4jIwb43rfl6wbwanocrJm9XFYfskuVC5K/TPyczNU7b84CXcbxks1Un6H6tLH9vf2LRnn8Ax7A5WQAAAHicY2BkYGAA4teL1+yI57f5ysDNwgAC529f0kOmWRiYVgEpDgYmEA8AUzEKsQAAAHicY2BkYGB2+O/AEMPCAAJAkpEBFbAAADgKAe0EAAAiAAAAAAQAAAAEAAAAAAAAKgAqACoAiAAAeJxjYGRgYGBhsGFgYgABEMkFhAwM/xn0QAIAD6YBhwB4nI1Ty07cMBS9QwKlQapQW3VXySvEqDCZGbGaHULiIQ1FKgjWMxknMfLEke2A+IJu+wntrt/QbVf9gG75jK577Lg8K1qQPCfnnnt8fX1NRC/pmjrk/zprC+8D7tBy9DHgBXoWfQ44Av8t4Bj4Z8CLtBL9CniJluPXASf0Lm4CXqFX8Q84dOLnMB17N4c7tBo1AS/Qi+hTwBH4rwHHwN8DXqQ30XXAS7QaLwSc0Gn8NuAVWou/gFmnjLrEaEh9GmDdDGgL3B4JsrRPDU2hTOiMSuJUIdKQQayiAth69r6akSSFqIJuA19TrzCIaY8sIoxyrNIrL//pw7A2iMygkX5vDj+G+kuoLdX4GlGK/8Lnlz6/h9MpmoO9rafrz7ILXEHHaAx95s9lsI7AHNMBWEZHULnfAXwG9/ZqdzLI08iuwRloXE8kfhXYAvE23+23DU3t626rbs8/8adv+9DWknsHp3E17oCf+Z48rvEQNZ78paYM38qfk3v/u3l3u3GXN2Dmvmvpf1Srwk3pB/VSsp512bA/GG5i2WJ7wu430yQ5K3nFGiOqgtmSB5pJVSizwaacmUZzZhXLlZTq8qGGFY2YcSkqbth6aW1tRmlaCFs2016m5qn36SbJrqosG4uMV4aP2PHBmB3tjtmgN2izkGQyLWprekbIntJFing32a5rKWCN/SdSoga45EJykyQ7asZvHQ8PTm6cslIpwyeyjbVltNikc2HTR7YKh9LBl9DADC0U/jLcBZDKrMhUBfQBvXRzLtFtjU9eNHKin0x5InTqb8lNpfKv1s1xHzTXRqgKzek/mb7nB8RZTCDhGEX3kK/8Q75AmUM/eLkfA+0Hi908Kx4eNsMgudg5GLdRD7a84npi+YxNr5i5KIbW5izXas7cHXIMAau1OueZhfj+cOcP3P8MNIWLyYOBuxL6DRylJ4cAAAB4nGNgYoAALjDJyIAOWMCiTIxMLDmZedkABtIBygAAAA==) format('woff');
+    }
+
+    .markdown-body {
+      padding: 1em;
+      font-family: sans-serif;
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+      color: #333333;
+      font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      word-wrap: break-word;
+    }
+
+    .markdown-body a {
+      background: transparent;
+    }
+
+    .markdown-body a:active,
+    .markdown-body a:hover {
+      outline: 0;
+    }
+
+    .markdown-body strong {
+      font-weight: bold;
+    }
+
+    .markdown-body h1 {
+      font-size: 2em;
+      margin: 0.67em 0;
+    }
+
+    .markdown-body img {
+      border: 0;
+    }
+
+    .markdown-body hr {
+      -moz-box-sizing: content-box;
+      box-sizing: content-box;
+      height: 0;
+    }
+
+    .markdown-body pre {
+      overflow: auto;
+    }
+
+    .markdown-body code,
+    .markdown-body kbd,
+    .markdown-body pre {
+      font-family: monospace, monospace;
+      font-size: 1em;
+    }
+
+    .markdown-body input {
+      color: inherit;
+      font: inherit;
+      margin: 0;
+    }
+
+    .markdown-body html input[disabled] {
+      cursor: default;
+    }
+
+    .markdown-body input {
+      line-height: normal;
+    }
+
+    .markdown-body input[type="checkbox"] {
+      box-sizing: border-box;
+      padding: 0;
+    }
+
+    .markdown-body table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+
+    .markdown-body td,
+    .markdown-body th {
+      padding: 0;
+    }
+
+    .markdown-body * {
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    .markdown-body input {
+      font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+      line-height: 1.4;
+    }
+
+    .markdown-body a {
+      color: #4183c4;
+      text-decoration: none;
+    }
+
+    .markdown-body a:hover,
+    .markdown-body a:focus,
+    .markdown-body a:active {
+      text-decoration: underline;
+    }
+
+    .markdown-body hr {
+      height: 0;
+      margin: 15px 0;
+      overflow: hidden;
+      background: transparent;
+      border: 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .markdown-body hr:before,
+    .markdown-body hr:after {
+      display: table;
+      content: " ";
+    }
+
+    .markdown-body hr:after {
+      clear: both;
+    }
+
+    .markdown-body h1,
+    .markdown-body h2,
+    .markdown-body h3,
+    .markdown-body h4,
+    .markdown-body h5,
+    .markdown-body h6 {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      line-height: 1.1;
+    }
+
+    .markdown-body h1 {
+      font-size: 30px;
+    }
+
+    .markdown-body h2 {
+      font-size: 21px;
+    }
+
+    .markdown-body h3 {
+      font-size: 16px;
+    }
+
+    .markdown-body h4 {
+      font-size: 14px;
+    }
+
+    .markdown-body h5 {
+      font-size: 12px;
+    }
+
+    .markdown-body h6 {
+      font-size: 11px;
+    }
+
+    .markdown-body blockquote {
+      margin: 0;
+    }
+
+    .markdown-body ul,
+    .markdown-body ol {
+      padding: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .markdown-body ol ol,
+    .markdown-body ul ol {
+      list-style-type: lower-roman;
+    }
+
+    .markdown-body ul ul ol,
+    .markdown-body ul ol ol,
+    .markdown-body ol ul ol,
+    .markdown-body ol ol ol {
+      list-style-type: lower-alpha;
+    }
+
+    .markdown-body dd {
+      margin-left: 0;
+    }
+
+    .markdown-body code,
+    .markdown-body pre {
+      font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+      font-size: 12px;
+    }
+
+    .markdown-body pre {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .markdown-body kbd {
+      background-color: #e7e7e7;
+      background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
+      background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+      background-image: linear-gradient(#fefefe, #e7e7e7);
+      background-repeat: repeat-x;
+      border-radius: 2px;
+      border: 1px solid #cfcfcf;
+      color: #000;
+      padding: 3px 5px;
+      line-height: 10px;
+      font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+      display: inline-block;
+    }
+
+    .markdown-body>*:first-child {
+      margin-top: 0 !important;
+    }
+
+    .markdown-body>*:last-child {
+      margin-bottom: 0 !important;
+    }
+
+    .markdown-body .anchor {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      display: block;
+      padding-right: 6px;
+      padding-left: 30px;
+      margin-left: -30px;
+    }
+
+    .markdown-body .anchor:focus {
+      outline: none;
+    }
+
+    .markdown-body h1,
+    .markdown-body h2,
+    .markdown-body h3,
+    .markdown-body h4,
+    .markdown-body h5,
+    .markdown-body h6 {
+      position: relative;
+      margin-top: 1em;
+      margin-bottom: 16px;
+      font-weight: bold;
+      line-height: 1.4;
+    }
+
+    .markdown-body h1 .octicon-link,
+    .markdown-body h2 .octicon-link,
+    .markdown-body h3 .octicon-link,
+    .markdown-body h4 .octicon-link,
+    .markdown-body h5 .octicon-link,
+    .markdown-body h6 .octicon-link {
+      display: none;
+      color: #000;
+      vertical-align: middle;
+    }
+
+    .markdown-body h1:hover .anchor,
+    .markdown-body h2:hover .anchor,
+    .markdown-body h3:hover .anchor,
+    .markdown-body h4:hover .anchor,
+    .markdown-body h5:hover .anchor,
+    .markdown-body h6:hover .anchor {
+      height: 1em;
+      padding-left: 8px;
+      margin-left: -30px;
+      line-height: 1;
+      text-decoration: none;
+    }
+
+    .markdown-body h1:hover .anchor .octicon-link,
+    .markdown-body h2:hover .anchor .octicon-link,
+    .markdown-body h3:hover .anchor .octicon-link,
+    .markdown-body h4:hover .anchor .octicon-link,
+    .markdown-body h5:hover .anchor .octicon-link,
+    .markdown-body h6:hover .anchor .octicon-link {
+      display: inline-block;
+    }
+
+    .markdown-body h1 {
+      padding-bottom: 0.3em;
+      font-size: 2.25em;
+      line-height: 1.2;
+      border-bottom: 1px solid #eee;
+    }
+
+    .markdown-body h2 {
+      padding-bottom: 0.3em;
+      font-size: 1.75em;
+      line-height: 1.225;
+      border-bottom: 1px solid #eee;
+    }
+
+    .markdown-body h3 {
+      font-size: 1.5em;
+      line-height: 1.43;
+    }
+
+    .markdown-body h4 {
+      font-size: 1.25em;
+    }
+
+    .markdown-body h5 {
+      font-size: 1em;
+    }
+
+    .markdown-body h6 {
+      font-size: 1em;
+      color: #777;
+    }
+
+    .markdown-body p,
+    .markdown-body blockquote,
+    .markdown-body ul,
+    .markdown-body ol,
+    .markdown-body dl,
+    .markdown-body table,
+    .markdown-body pre {
+      margin-top: 0;
+      margin-bottom: 16px;
+    }
+
+    .markdown-body hr {
+      height: 4px;
+      padding: 0;
+      margin: 16px 0;
+      background-color: #e7e7e7;
+      border: 0 none;
+    }
+
+    .markdown-body ul,
+    .markdown-body ol {
+      padding-left: 2em;
+    }
+
+    .markdown-body ul ul,
+    .markdown-body ul ol,
+    .markdown-body ol ol,
+    .markdown-body ol ul {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .markdown-body li>p {
+      margin-top: 16px;
+    }
+
+    .markdown-body dl {
+      padding: 0;
+    }
+
+    .markdown-body dl dt {
+      padding: 0;
+      margin-top: 16px;
+      font-size: 1em;
+      font-style: italic;
+      font-weight: bold;
+    }
+
+    .markdown-body dl dd {
+      padding: 0 16px;
+      margin-bottom: 16px;
+    }
+
+    .markdown-body blockquote {
+      padding: 0 15px;
+      color: #777;
+      border-left: 4px solid #ddd;
+    }
+
+    .markdown-body blockquote>:first-child {
+      margin-top: 0;
+    }
+
+    .markdown-body blockquote>:last-child {
+      margin-bottom: 0;
+    }
+
+    .markdown-body table {
+      display: block;
+      width: 100%;
+      overflow: auto;
+      word-break: normal;
+      word-break: keep-all;
+    }
+
+    .markdown-body table th {
+      font-weight: bold;
+    }
+
+    .markdown-body table th,
+    .markdown-body table td {
+      padding: 6px 13px;
+      border: 1px solid #ddd;
+    }
+
+    .markdown-body table tr {
+      background-color: #fff;
+      border-top: 1px solid #ccc;
+    }
+
+    .markdown-body table tr:nth-child(2n) {
+      background-color: #f8f8f8;
+    }
+
+    .markdown-body img {
+      max-width: 100%;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    .markdown-body code {
+      padding: 0;
+      padding-top: 0.2em;
+      padding-bottom: 0.2em;
+      margin: 0;
+      font-size: 85%;
+      background-color: rgba(0,0,0,0.04);
+      border-radius: 3px;
+    }
+
+    .markdown-body code:before,
+    .markdown-body code:after {
+      letter-spacing: -0.2em;
+      content: "\00a0";
+    }
+
+    .markdown-body pre>code {
+      padding: 0;
+      margin: 0;
+      font-size: 100%;
+      word-break: normal;
+      white-space: pre;
+      background: transparent;
+      border: 0;
+    }
+
+    .markdown-body .highlight {
+      margin-bottom: 16px;
+    }
+
+    .markdown-body .highlight pre,
+    .markdown-body pre {
+      padding: 16px;
+      overflow: auto;
+      font-size: 85%;
+      line-height: 1.45;
+      background-color: #f7f7f7;
+      border-radius: 3px;
+    }
+
+    .markdown-body .highlight pre {
+      margin-bottom: 0;
+      word-break: normal;
+    }
+
+    .markdown-body pre {
+      word-wrap: normal;
+    }
+
+    .markdown-body pre code {
+      display: inline;
+      max-width: initial;
+      padding: 0;
+      margin: 0;
+      overflow: initial;
+      line-height: inherit;
+      word-wrap: normal;
+      background-color: transparent;
+      border: 0;
+    }
+
+    .markdown-body pre code:before,
+    .markdown-body pre code:after {
+      content: normal;
+    }
+
+    .markdown-body .highlight {
+      background: #ffffff;
+    }
+
+    .markdown-body .highlight .c {
+      color: #999988;
+      font-style: italic;
+    }
+
+    .markdown-body .highlight .err {
+      color: #a61717;
+      background-color: #e3d2d2;
+    }
+
+    .markdown-body .highlight .k {
+      font-weight: bold;
+    }
+
+    .markdown-body .highlight .o {
+      font-weight: bold;
+    }
+
+    .markdown-body .highlight .cm {
+      color: #999988;
+      font-style: italic;
+    }
+
+    .markdown-body .highlight .cp {
+      color: #999999;
+      font-weight: bold;
+    }
+
+    .markdown-body .highlight .c1 {
+      color: #999988;
+      font-style: italic;
+    }
+
+    .markdown-body .highlight .cs {
+      color: #999999;
+      font-weight: bold;
+      font-style: italic;
+    }
+
+    .markdown-body .highlight .gd {
+      color: #000000;
+      background-color: #ffdddd;
+    }
+
+    .markdown-body .highlight .gd .x {
+      color: #000000;
+      background-color: #ffaaaa;
+    }
+
+    .markdown-body .highlight .ge {
+      font-style: italic;
+    }
+
+    .markdown-body .highlight .gr {
+      color: #aa0000;
+    }
+
+    .markdown-body .highlight .gh {
+      color: #999999;
+    }
+
+    .markdown-body .highlight .gi {
+      color: #000000;
+      background-color: #ddffdd;
+    }
+
+    .markdown-body .highlight .gi .x {
+      color: #000000;
+      background-color: #aaffaa;
+    }
+
+    .markdown-body .highlight .go {
+      color: #888888;
+    }
+
+    .markdown-body .highlight .gp {
+      color: #555555;
+    }
+
+    .markdown-body .highlight .gs {
+      font-weight: bold;
+    }
+
+    .markdown-body .highlight .gu {
+      color: #800080;
+      font-weight: bold;
+    }
+
+    .markdown-body .highlight .gt {
+      color: #aa0000;
+    }
+
+    .markdown-body .highlight .kc {
+      font-weight: bold;
+    }
+
+    .markdown-body .highlight .kd {
+      font-weight: bold;
+    }
+
+    .markdown-body .highlight .kn {
+      font-weight: bold;
+    }
+
+    .markdown-body .highlight .kp {
+      font-weight: bold;
+    }
+
+    .markdown-body .highlight .kr {
+      font-weight: bold;
+    }
+
+    .markdown-body .highlight .kt {
+      color: #445588;
+      font-weight: bold;
+    }
+
+    .markdown-body .highlight .m {
+      color: #009999;
+    }
+
+    .markdown-body .highlight .s {
+      color: #dd1144;
+    }
+
+    .markdown-body .highlight .n {
+      color: #333333;
+    }
+
+    .markdown-body .highlight .na {
+      color: teal;
+    }
+
+    .markdown-body .highlight .nb {
+      color: #0086b3;
+    }
+
+    .markdown-body .highlight .nc {
+      color: #445588;
+      font-weight: bold;
+    }
+
+    .markdown-body .highlight .no {
+      color: teal;
+    }
+
+    .markdown-body .highlight .ni {
+      color: purple;
+    }
+
+    .markdown-body .highlight .ne {
+      color: #990000;
+      font-weight: bold;
+    }
+
+    .markdown-body .highlight .nf {
+      color: #990000;
+      font-weight: bold;
+    }
+
+    .markdown-body .highlight .nn {
+      color: #555555;
+    }
+
+    .markdown-body .highlight .nt {
+      color: navy;
+    }
+
+    .markdown-body .highlight .nv {
+      color: teal;
+    }
+
+    .markdown-body .highlight .ow {
+      font-weight: bold;
+    }
+
+    .markdown-body .highlight .w {
+      color: #bbbbbb;
+    }
+
+    .markdown-body .highlight .mf {
+      color: #009999;
+    }
+
+    .markdown-body .highlight .mh {
+      color: #009999;
+    }
+
+    .markdown-body .highlight .mi {
+      color: #009999;
+    }
+
+    .markdown-body .highlight .mo {
+      color: #009999;
+    }
+
+    .markdown-body .highlight .sb {
+      color: #dd1144;
+    }
+
+    .markdown-body .highlight .sc {
+      color: #dd1144;
+    }
+
+    .markdown-body .highlight .sd {
+      color: #dd1144;
+    }
+
+    .markdown-body .highlight .s2 {
+      color: #dd1144;
+    }
+
+    .markdown-body .highlight .se {
+      color: #dd1144;
+    }
+
+    .markdown-body .highlight .sh {
+      color: #dd1144;
+    }
+
+    .markdown-body .highlight .si {
+      color: #dd1144;
+    }
+
+    .markdown-body .highlight .sx {
+      color: #dd1144;
+    }
+
+    .markdown-body .highlight .sr {
+      color: #009926;
+    }
+
+    .markdown-body .highlight .s1 {
+      color: #dd1144;
+    }
+
+    .markdown-body .highlight .ss {
+      color: #990073;
+    }
+
+    .markdown-body .highlight .bp {
+      color: #999999;
+    }
+
+    .markdown-body .highlight .vc {
+      color: teal;
+    }
+
+    .markdown-body .highlight .vg {
+      color: teal;
+    }
+
+    .markdown-body .highlight .vi {
+      color: teal;
+    }
+
+    .markdown-body .highlight .il {
+      color: #009999;
+    }
+
+    .markdown-body .highlight .gc {
+      color: #999;
+      background-color: #EAF2F5;
+    }
+
+    .markdown-body .octicon {
+      font: normal normal 16px octicons-anchor;
+      line-height: 1;
+      display: inline-block;
+      text-decoration: none;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    .markdown-body .octicon-link:before {
+      content: '\f05c';
+    }
+
+    .markdown-body .task-list-item {
+      list-style-type: none;
+    }
+
+    .markdown-body .task-list-item+.task-list-item {
+      margin-top: 3px;
+    }
+
+    .markdown-body .task-list-item input {
+      margin: 0 4px 0.25em -20px;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body class="markdown-body">
+  <h1>Full keymap</h1>
+
+  <table style="font-size: 11px">
+      <thead>
+          <tr>
+              <th title="Field #1">key</th>
+              <th title="Field #2">(no modifier)</th>
+              <th title="Field #3">+shift</th>
+              <th title="Field #4">+ctrl</th>
+              <th title="Field #5">+alt</th>
+              <th title="Field #6">+ctrl+shift</th>
+              <th title="Field #7">+alt+shift</th>
+              <th title="Field #8">+ctrl+alt</th>
+              <th title="Field #9">+ctrl+alt+shift</th>
+          </tr>
+      </thead>
+
+      <tbody>
+
+          <tr>
+              <td>enter</td>
+              <td>
+                  <ul>
+                    <li>JoinStatement: Join statement (after bracket)</li>
+                    <li>KeymapEnhanced: Add line into brackets</li>
+                    <li>Open Search Result: Open</li>
+                  </ul>
+              </td>
+              <td>
+                  <ul>
+                    <li>KeymapEnhanced: Add line up</li>
+                    <li>SearchPanelEnhanced: Select found</li>
+                  </ul>
+              </td>
+              <td>
+                  <ul>
+                    <li>KeymapEnhanced: Add line down</li>
+                    <li>SearchPanelEnhanced: Go to end of found</li>
+                  </ul>
+              </td>
+              <td>
+                  <ul>
+                    <li>Expression: Goto in brackets forward</li>
+                    <li>Expression: Goto search result forward</li>
+                  </ul>
+              </td>
+              <td>
+                  <ul>
+                    <li>Expression: Goto over next brackets forward</li>
+                    <li>Expression: Goto search result backward</li>
+                    <li>SearchPanelEnhanced: Select all found</li>
+                  </ul>
+              </td>
+              <td>Expression: Goto out of brackets or string forward</td>
+              <td>Expression: Goto matched bracket or quote</td>
+              <td>Expression: Select in brackets or string</td>
+          </tr>
+
+          <tr>
+              <td>backspace</td>
+              <td></td>
+              <td></td>
+              <td>ToggleWrap: Clean brackets or quotes backward</td>
+              <td>Delete brackets or string backward</td>
+              <td>KeymapEnhanced: Delete to begin of line</td>
+              <td>Expression: Goto in brackets backward</td>
+              <td></td>
+              <td>Expression: Goto over brackets backward</td>
+          </tr>
+
+          <tr>
+              <td>
+                \
+              </td>
+              <td></td>
+              <td></td>
+              <td>SnippetCaller: Show snippet caller panel</td>
+              <td>KeymapEnhanced: Command palette</td>
+              <td>Expression: Select to bracket or quote backward</td>
+              <td>Select to bracket or quote forward</td>
+              <td>Expression: Goto end of next brackets</td>
+              <td>Select in brackets or string including wrapping</td>
+          </tr>
+
+          <tr>
+              <td>tab</td>
+              <td>
+                <ul>
+                  <li>SnippetCaller: Insert snippet or goto next field</li>
+                  <li>CloneFile: Complete cloning file in list</li>
+                  <li>FileDialog: Complete operation</li>
+                  <li>FileList: Complete rename</li>
+                  <li>FolderFiles: Open exact file</li>
+                  <li>GotoLineEnhacned: Goto line</li>
+                </ul>
+              </td>
+              <td></td>
+              <td>KeymapEnhanced: Next view</td>
+              <td></td>
+              <td>KeymapEnhanced: Prev view</td>
+              <td></td>
+              <td></td>
+              <td></td>
+          </tr>
+
+          <tr>
+              <td>esc</td>
+              <td>RepeatCommand: Cancel repeat</td>
+              <td></td>
+              <td>RemoveSelection: Leave only last cursor</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+          </tr>
+
+          <tr>
+              <td>
+                `
+              </td>
+              <td>ToggleWrap: Change to ``</td>
+              <td></td>
+              <td></td>
+              <td>EvalSelection: Evaluate selection</td>
+              <td></td>
+              <td></td>
+              <td>EvalSelection: Show evaluation history</td>
+              <td></td>
+          </tr>
+
+          <tr>
+              <td>1</td>
+              <td></td>
+              <td></td>
+              <td>KeymapEnhanced: Focus first tab</td>
+              <td>RepeatCommand: Repeat next, &lt;1&gt;</td>
+              <td></td>
+              <td>Statement: Select 1st token/argument</td>
+              <td>Statement: Goto 1st token/argument</td>
+              <td></td>
+          </tr>
+
+          <tr>
+              <td>2</td>
+              <td></td>
+              <td></td>
+              <td>KeymapEnhanced: Focus second tab</td>
+              <td>RepeatCommand: Repeat next, &lt;2&gt;</td>
+              <td></td>
+              <td>Statement: Select 2nd token/argument</td>
+              <td>Statement: Goto 2nd token/argument</td>
+              <td></td>
+          </tr>
+
+          <tr>
+              <td>3</td>
+              <td></td>
+              <td></td>
+              <td>KeymapEnhanced: Focus third tab</td>
+              <td>RepeatCommand: Repeat next, &lt;3&gt;</td>
+              <td></td>
+              <td>Statement: Select 3rd token/argument</td>
+              <td>Statement: Goto 3rd token/argument</td>
+              <td></td>
+          </tr>
+
+          <tr>
+              <td>4</td>
+              <td></td>
+              <td></td>
+              <td>KeymapEnhanced: Focus fourth tab</td>
+              <td>RepeatCommand: Repeat next, &lt;4&gt;</td>
+              <td></td>
+              <td>Statement: Select 4th token/argument</td>
+              <td>Statement: Goto 4th token/argument</td>
+              <td></td>
+          </tr>
+
+          <tr>
+              <td>5</td>
+              <td></td>
+              <td></td>
+              <td>KeymapEnhanced: Focus fifth tab</td>
+              <td>RepeatCommand: Repeat next, &lt;5&gt;</td>
+              <td></td>
+              <td>Statement: Select 5th token/argument</td>
+              <td>Statement: Goto 5th token/argument</td>
+              <td></td>
+          </tr>
+
+          <tr>
+              <td>6</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>RepeatCommand: Repeat next, &lt;6&gt;</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+          </tr>
+
+          <tr>
+              <td>7</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>RepeatCommand: Repeat next, &lt;7&gt;</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+          </tr>
+
+          <tr>
+              <td>8</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>RepeatCommand: Repeat next, &lt;8&gt;</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+          </tr>
+
+          <tr>
+              <td>9</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>RepeatCommand: Repeat next, &lt;9&gt;</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+          </tr>
+
+          <tr>
+              <td>0</td>
+              <td></td>
+              <td>ToggleWrap: Change to ()</td>
+              <td></td>
+              <td>RepeatCommand: Repeat next, &lt;0&gt;</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+          </tr>
+
+          <tr>
+              <td>
+                -
+              </td>
+              <td>KeymapEnhanced: Insert dash</td>
+              <td>KeymapEnhanced: Insert minus</td>
+              <td>Inc-Dec-Value: decrease</td>
+              <td>Method: Move method up</td>
+              <td>Inc-Dec-Value: fast decrease</td>
+              <td>Inc-Dec-Value: full decrease</td>
+              <td></td>
+              <td></td>
+          </tr>
+
+          <tr>
+              <td>
+                =
+              </td>
+              <td></td>
+              <td></td>
+              <td>Inc-Dec-Value: increase</td>
+              <td>Method: Move method down</td>
+              <td>Inc-Dec-Value: fast increase</td>
+              <td>Inc-Dec-Value: full increase</td>
+              <td></td>
+              <td></td>
+          </tr>
+
+          <tr>
+              <td>q</td>
+              <td></td>
+              <td></td>
+              <td>KeymapEnhanced: Line comment</td>
+              <td>
+                  <ul>
+                    <li>NamedMark: Go</li>
+                    <li>KeymapEnhanced: Toggle regexp in find/replace</li>
+                    <li>SearchPanelEnhanced: Toggle regexp</li>
+                  </ul>
+              </td>
+              <td>KeymapEnhanced: Block comment</td>
+              <td>NamedMark: Set</td>
+              <td>NamedMark: Select to</td>
+              <td>NamedMark: Delete to</td>
+          </tr>
+
+          <tr>
+              <td>w</td>
+              <td></td>
+              <td></td>
+              <td>
+                  <ul>
+                    <li>JoinAssignment: join</li>
+                    <li>KeymapEnhanced: Split selection to lines</li>
+                  </ul>
+              </td>
+              <td>
+                  <ul>
+                    <li>Semicolon: Add</li>
+                    <li>KeymapEnhanced: Toggle case sensetive in find/replace</li>
+                    <li>SearchPanelEnhanced: Toggle word</li>
+                  </ul>
+              </td>
+              <td>JoinAssignment: unjoin</td>
+              <td>Semicolon: Add everywhere</td>
+              <td>WrapStatement: rewrap</td>
+              <td></td>
+          </tr>
+
+          <tr>
+              <td>e</td>
+              <td></td>
+              <td></td>
+              <td>
+                <ul>
+                  <li>GotoDefinitionEnhanced: Goto definition</li>
+                  <li>KeymapEnhanced: Goto css declaration</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>SearchPanelEnhanced: Find under</li>
+                  <li>KeymapEnhanced: Toggle whole word in find/replace</li>
+                  <li>SearchPanelEnhanced: Toggle fuzzy</li>
+                </ul>
+              </td>
+              <td></td>
+              <td>SearchPanelEnhanced: Find under backward</td>
+              <td>Keyword: Create keyword at cursor</td>
+              <td></td>
+          </tr>
+
+          <tr>
+              <td>r</td>
+              <td></td>
+              <td></td>
+              <td>
+                <ul>
+                  <li>KeymapEnhanced: Redo</li>
+                  <li>FileList: Rename file</li>
+                </ul>
+              </td>
+              <td>IncrementalMark: Goto next</td>
+              <td>FullUndo: Full redo</td>
+              <td>IncrementalMark: Goto previous</td>
+              <td>IncrementalMark: Clean</td>
+              <td>KeymapEnhanced: Soft redo</td>
+          </tr>
+
+          <tr>
+              <td>t</td>
+              <td></td>
+              <td></td>
+              <td>JoinLinesEnhanced: join</td>
+              <td>KeymapEnhanced: Select tag</td>
+              <td>KeymapEnhanced: Reopen last closed tab</td>
+              <td></td>
+              <td>JoinStatement: Join</td>
+              <td>JoinStatement: Unjoin</td>
+          </tr>
+
+          <tr>
+              <td>y</td>
+              <td></td>
+              <td></td>
+              <td>IndentationNavigation: Goto end of block backward</td>
+              <td>IndentationNavigation: Goto out of block backward</td>
+              <td>IndentationNavigation: Select to end of block backward</td>
+              <td>IndentationNavigation: Select to the end of block backward</td>
+              <td>IndentationNavigation: Goto block backward</td>
+              <td>IndentationNavigation: Select to beginning of block backward</td>
+          </tr>
+
+          <tr>
+              <td>u</td>
+              <td></td>
+              <td></td>
+              <td>
+                *see &quot;ctrl+u, ...&quot; section
+              </td>
+              <td>IndentationNavigation: Select current indentation</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+          </tr>
+
+          <tr>
+              <td>i</td>
+              <td></td>
+              <td></td>
+              <td>Expression: Goto block up</td>
+              <td>
+                <ul>
+                  <li>KeymapEnhanced: Move by line up</li>
+                  <li>SearchPanelEnhanced: Show previous search</li>
+                </ul>
+              </td>
+              <td>Expression: Select block up</td>
+              <td>KeymapEnhanced: Select by line up</td>
+              <td>
+                <ul>
+                  <li>ScrollEnhanced: scroll up</li>
+                  <li>FolderFiles: Goto folder up</li>
+                </ul>
+              </td>
+              <td>KeymapEnhanced: Move line up</td>
+          </tr>
+
+          <tr>
+              <td>o</td>
+              <td></td>
+              <td></td>
+              <td>
+                <ul>
+                  <li>Autocompletion: complete word backward (fuzzy)</li>
+                  <li>FileList: Open file or folder</li>
+                </ul>
+              </td>
+              <td>Autocompletion: complete nesting backward (fuzzy)</td>
+              <td>Autocompletion: complete subword backward</td>
+              <td>Autocompletion: complete line forward</td>
+              <td>Autocompletion: complete long word backward (fuzzy)</td>
+              <td></td>
+          </tr>
+
+          <tr>
+              <td>p</td>
+              <td></td>
+              <td></td>
+              <td>
+                <ul>
+                  <li>Autocompletion: complete word forward (fuzzy)</li>
+                  <li>FileList: Preview file</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>Autocompletion: complete nesting forward (fuzzy)</li>
+                  <li>FileList: Insert short file name to view</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>Autocompletion: complete subword forward</li>
+                  <li>FileList: Insert file name to view</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>Autocompletion: complete line forward</li>
+                  <li>FileList: Insert relative file name to view</li>
+                </ul>
+              </td>
+              <td>Autocompletion: complete long word forward (fuzzy)</td>
+              <td>FileList: Insert absolute file name to view</td>
+          </tr>
+
+          <tr>
+              <td>
+                [
+              </td>
+              <td>ToggleWrap: Change to []</td>
+              <td>ToggleWrap: Change to {}</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+          </tr>
+
+          <tr>
+              <td>
+                ]
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+          </tr>
+
+          <tr>
+              <td>a</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>
+                *see alt+a (GotoCharacter) section
+              </td>
+              <td>Formatter: format</td>
+              <td></td>
+              <td></td>
+              <td></td>
+          </tr>
+
+          <tr>
+              <td>s</td>
+              <td></td>
+              <td></td>
+              <td>
+                <ul>
+                  <li>FileDialog: Save</li>
+                  <li>SearchPanelEnhanced: Select to found</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>Statement: Select token</li>
+                  <li>SearchPanelEnhanced: Toggle case sensetive</li>
+                </ul>
+              </td>
+              <td>FileDialog: Save as..</td>
+              <td>Statement: Select argument</td>
+              <td>Statement: Select statement</td>
+              <td>ExplicitSaveAll: Save all</td>
+          </tr>
+
+          <tr>
+              <td>d</td>
+              <td></td>
+              <td></td>
+              <td>
+                <ul>
+                  <li>Duplicate Lines: duplicate lines</li>
+                  <li>FileList: Delete file</li>
+                  <li>Keyword: Delete keyword from list</li>
+                  <li>SearchPanelEnhanced: Delete to found</li>
+                </ul>
+              </td>
+              <td>Statement: Delete token</td>
+              <td>Statement: Duplicate statement</td>
+              <td>Statement: Delete argument</td>
+              <td>Statement: Delete statement</td>
+              <td>CloneFile: clone</td>
+          </tr>
+
+          <tr>
+              <td>f</td>
+              <td></td>
+              <td></td>
+              <td>
+                <ul>
+                  <li>SearchPanelEnhanced: Display fuzzy</li>
+                  <li>FolderFiles: Find in current folder</li>
+                </ul>
+              </td>
+              <td>SearchPanelEnhanced: Goto next result</td>
+              <td>SearchPanelEnhanced: Display fuzzy backward</td>
+              <td>SearchPanelEnhanced: Goto previous result</td>
+              <td>SearchPanelEnhanced: Display normal</td>
+              <td>SearchPanelEnhanced: Display normal backward</td>
+          </tr>
+
+          <tr>
+              <td>g</td>
+              <td></td>
+              <td></td>
+              <td>GotoLineEnhanced: Prompt goto line</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+          </tr>
+
+          <tr>
+              <td>h</td>
+              <td></td>
+              <td></td>
+              <td>
+                <ul>
+                  <li>IndentationNavigation: Goto end of block forward</li>
+                  <li>FolderFiles: Goto root folder of project</li>
+                </ul>
+              </td>
+              <td>IndentationNavigation: Goto out of block forward</td>
+              <td>
+                <ul>
+                  <li>IndentationNavigation: Select to end of block forward</li>
+                  <li>FolderFiles: Goto user home folder</li>
+                </ul>
+              </td>
+              <td>IndentationNavigation: Select to the end of block forward</td>
+              <td>IndentationNavigation: Goto block forward</td>
+              <td>IndentationNavigation: Select to beginning of block forward</td>
+          </tr>
+
+          <tr>
+              <td>j</td>
+              <td></td>
+              <td></td>
+              <td>KeymapEnhanced: Move by word left</td>
+              <td>KeymapEnhanced: Move by character left</td>
+              <td>KeymapEnhanced: Select word left</td>
+              <td>KeymapEnhanced: Select by character left</td>
+              <td>Expression: Goto over brackets or string backward</td>
+              <td>Expression: Select brackets or string backward</td>
+          </tr>
+
+          <tr>
+              <td>k</td>
+              <td></td>
+              <td></td>
+              <td>Expression: Goto block down</td>
+              <td>
+                <ul>
+                  <li>KeymapEnhanced: Move by line down</li>
+                  <li>SearchPanelEnhanced: Show next search</li>
+                </ul>
+              </td>
+              <td>Expression: Select block down</td>
+              <td>KeymapEnhanced: Select by line down</td>
+              <td>
+                <ul>
+                  <li>ScrollEnhanced: scroll down</li>
+                  <li>FolderFiles: Goto folder down</li>
+                </ul>
+              </td>
+              <td>KeymapEnhanced: Move line down</td>
+          </tr>
+
+          <tr>
+              <td>l</td>
+              <td></td>
+              <td></td>
+              <td>KeymapEnhanced: Move by word right</td>
+              <td>KeymapEnhanced: Move by character right</td>
+              <td>KeymapEnhanced: Select word right</td>
+              <td>KeymapEnhanced: Select by character right</td>
+              <td>Expression: Goto over brackets or string forward</td>
+              <td>Expression: Select brackets or string forward</td>
+          </tr>
+
+          <tr>
+              <td>
+                ;
+              </td>
+              <td>ToggleWrap: Change to following :</td>
+              <td>ToggleWrap: Change to preceding :</td>
+              <td>Statement: Add line before statement</td>
+              <td>KeymapEnhanced: Goto begin of line</td>
+              <td></td>
+              <td>KeymapEnhanced: Select begin of line</td>
+              <td>KeymapEnhanced: Goto begin of file</td>
+              <td>KeymapEnhanced: Select begin of file</td>
+          </tr>
+
+          <tr>
+              <td>
+                &#39;
+              </td>
+              <td>ToggleWrap: Change to &#39;&#39;</td>
+              <td>ToggleWrap: Change to &quot;&quot;</td>
+              <td>Statement: Add line after statement</td>
+              <td>KeymapEnhanced: Goto end of line</td>
+              <td></td>
+              <td>KeymapEnhanced: Select end of line</td>
+              <td>KeymapEnhanced: Goto end of file</td>
+              <td>KeymapEnhanced: Select end of file</td>
+          </tr>
+
+          <tr>
+              <td>z</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>GotoLastEditEnhanced: Goto last edit</td>
+              <td>FullUndo: Full undo</td>
+              <td>GotoLastEditEnhanced: Goto next edit</td>
+              <td></td>
+              <td>KeymapEnhanced: Soft undo</td>
+          </tr>
+
+          <tr>
+              <td>x</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>RepeatCommand: Repeat last</td>
+              <td>LocalVariable: Detach</td>
+              <td>LocalVariable: Rename</td>
+              <td>LocalVariable: Extract</td>
+              <td>RemoveSelection: Remove last cursor</td>
+          </tr>
+
+          <tr>
+              <td>c</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>AppendSelection: append next</td>
+              <td>AppendSelection: skip last</td>
+              <td>AppendSelection: append previous</td>
+              <td>
+                <ul>
+                  <li>AppendSelection: append next word</li>
+                  <li>CloneFile: clone file in list</li>
+                </ul>
+              </td>
+              <td>AppendSelection: append previous word</td>
+          </tr>
+
+          <tr>
+              <td>v</td>
+              <td></td>
+              <td></td>
+              <td>KeymapEnhanced: Paste and ident</td>
+              <td></td>
+              <td>KeymapEnhanced: Paste</td>
+              <td></td>
+              <td>JoinChainCall: toggle</td>
+              <td>KeymapEnhanced: Paste from history</td>
+          </tr>
+
+          <tr>
+              <td>b</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+          </tr>
+
+          <tr>
+              <td>n</td>
+              <td></td>
+              <td></td>
+              <td>
+                *see &quot;ctrl+n, ...&quot; section
+                  <li>FolderFiles: Create folder</li>
+                  <li>Keyword: Create keyword at list</li>
+              </td>
+              <td>Method: Go to next method</td>
+              <td>KeymapEnhanced: New file</td>
+              <td>Method: Go to previous method</td>
+              <td>Method: Swap method start/end</td>
+              <td>Method: Create method after current</td>
+          </tr>
+
+          <tr>
+              <td>m</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>Statement: Swap start/end of token</td>
+              <td></td>
+              <td>Statement: Swap start/end of argument</td>
+              <td></td>
+              <td></td>
+          </tr>
+
+          <tr>
+              <td>
+                ,
+              </td>
+              <td></td>
+              <td></td>
+              <td>KeymapEnhanced: Prev view</td>
+              <td>Statement: Goto previous token</td>
+              <td>MoveTab: Move backward</td>
+              <td>Statement: Goto previous argument</td>
+              <td>Statement: Swap token backward</td>
+              <td>Statement: Swap argument backward</td>
+          </tr>
+
+          <tr>
+              <td>
+                .
+              </td>
+              <td>KeymapEnhanced: Insert &quot;-&gt;&quot; if no space before cursor (php)</td>
+              <td></td>
+              <td>KeymapEnhanced: Next view</td>
+              <td>Statement: Goto next token</td>
+              <td>MoveTab: Move forward</td>
+              <td>Statement: Goto next argument</td>
+              <td>Statement: Swap token forward</td>
+              <td>Statement: Swap argument forward</td>
+          </tr>
+
+          <tr>
+              <td>
+                /
+              </td>
+              <td></td>
+              <td></td>
+              <td>
+                <ul>
+                  <li>Expression: Delete subword forward</li>
+                  <li>ToggleWrap: Clean brackets or quotes forward</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>JoinStatement: Right delete</li>
+                  <li>JoinStatement: Unjoin statement (after bracket)</li>
+                  <li>ToggleWrap: Remove wrap</li>
+                </ul>
+              </td>
+              <td>KeymapEnhanced: Delete to end of line</td>
+              <td>KeymapEnhanced: Delete line</td>
+              <td>Expression: Delete brackets or string forward</td>
+              <td>Expression: Delete in brackets or string</td>
+          </tr>
+
+          <tr>
+              <td>space</td>
+              <td></td>
+              <td></td>
+              <td>KeymapEnhanced: Autocompletion</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+          </tr>
+
+          <tr>
+              <td>f1</td>
+              <td>GotoSelectionEnhanced: Show panel</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+          </tr>
+
+          <tr>
+              <td>f2</td>
+              <td>KeymapEnhanced: Show keywords overlay</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+          </tr>
+
+          <tr>
+              <td>f3</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+          </tr>
+
+          <tr>
+              <td>f4</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+          </tr>
+
+          <tr>
+              <td>f5</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+          </tr>
+
+          <tr>
+              <td>f6</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+          </tr>
+
+          <tr>
+              <td>f7</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+          </tr>
+
+          <tr>
+              <td>f8</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+          </tr>
+
+          <tr>
+              <td>f9</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+          </tr>
+
+          <tr>
+              <td>f10</td>
+              <td>
+                <ul>
+                  <li>OpenPath: Open project folder</li>
+                  <li>FolderFiles: Open file manager for folder</li>
+                </ul>
+              </td>
+              <td></td>
+              <td>OpenPath: Open file folder</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+          </tr>
+
+          <tr>
+              <td>f11</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+          </tr>
+
+          <tr>
+              <td>f12</td>
+              <td>TerminalProjectFolder: open terminal in project folder</td>
+              <td></td>
+              <td>TerminalProjectFolder: open terminal in current folder</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+          </tr>
+
+          <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+          </tr>
+
+
+    </tbody>
+  </table>
+
+  <h3>alt+a, ...</h3>
+
+  <p>This functionality provided by "GotoCharacter" plugin.</p>
+
+  <ul>
+    <li>&lt;character&gt;: Go to character</li>
+    <li>alt+s, &lt;character&gt;: Select to character</li>
+    <li>alt+d, &lt;character&gt;: Delete to character</li>
+    <li>alt+a, &lt;character&gt;: Go to character backward</li>
+    <li>alt+a, alt+s, &lt;character&gt;: Select to character backward</li>
+    <li>alt+a, alt+d, &lt;character&gt;: Delete to character backward</li>
+  </ul>
+
+  <h3>ctrl+u, ctrl+&lt;key&gt;</h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th title="Field #1">ctrl+u, ctrl+&lt;key&gt;</th>
+        <th title="Field #2">(no modifier)</th>
+        <th title="Field #3">+ctrl</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>enter</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>backspace</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>\</td>
+        <td>KeymapEnhanced: Open folder</td>
+        <td>StatusMessage: Show scope name</td>
+      </tr>
+      <tr>
+        <td>tab</td>
+        <td>KeymapEnhanced: Sort lines</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td></td>
+        <td>RemoveSelection: Remove 1st cursor</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td></td>
+        <td>RemoveSelection: Remove 2nd cursor</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td></td>
+        <td>RemoveSelection: Remove 3rd cursor</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td></td>
+        <td>RemoveSelection: Remove 4th cursor</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td></td>
+        <td>RemoveSelection: Remove 5th cursor</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>0</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>-</td>
+        <td></td>
+        <td>Case Conversion: convert to snakecase</td>
+      </tr>
+      <tr>
+        <td>=</td>
+        <td></td>
+        <td>Case Conversion: convert to camelcase</td>
+      </tr>
+      <tr>
+        <td>q</td>
+        <td>KeymapEnhanced: Uniq lines</td>
+        <td>AlignCursors: Align</td>
+      </tr>
+      <tr>
+        <td>w</td>
+        <td>SnippetManager: List snippets</td>
+        <td>SnippetManager: Create snippet</td>
+      </tr>
+      <tr>
+        <td>e</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>r</td>
+        <td></td>
+        <td>FileDialog: Rename</td>
+      </tr>
+      <tr>
+        <td>t</td>
+        <td></td>
+        <td>ColorSchemeSelector: Select color scheme</td>
+      </tr>
+      <tr>
+        <td>y</td>
+        <td>KeymapEnhanced: Open settings</td>
+        <td>StatusMessage: Toggle default status</td>
+      </tr>
+      <tr>
+        <td>u</td>
+        <td>KeymapEnhanced: Open keymap</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>i</td>
+        <td>Keyword: Update project keywords</td>
+        <td>Keyword: Show keywords</td>
+      </tr>
+      <tr>
+        <td>o</td>
+        <td>KeymapEnhanced: Open file</td>
+        <td>FileDialog: Open</td>
+      </tr>
+      <tr>
+        <td>p</td>
+        <td>KeymapEnhanced: Open project settings</td>
+        <td>KeymapEnhanced: Open project</td>
+      </tr>
+      <tr>
+        <td>[</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>]</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>a</td>
+        <td>KeymapEnhanced: Save opened folder as project</td>
+        <td>KeymapEnhanced: Toggle sidebar</td>
+      </tr>
+      <tr>
+        <td>s</td>
+        <td>KeymapEnhanced: Save as</td>
+        <td>KeymapEnhanced: Save</td>
+      </tr>
+      <tr>
+        <td>d</td>
+        <td></td>
+        <td>FileUtil: Delete file</td>
+      </tr>
+      <tr>
+        <td>f</td>
+        <td>KeymapEnhanced: Find in view</td>
+        <td>KeymapEnhanced: Find in files</td>
+      </tr>
+      <tr>
+        <td>g</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>h</td>
+        <td></td>
+        <td>KeymapEnhanced: Replace</td>
+      </tr>
+      <tr>
+        <td>j</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>k</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>l</td>
+        <td>CloseOther: Close others</td>
+        <td>KeymapEnhanced: Close file</td>
+      </tr>
+      <tr>
+        <td>;</td>
+        <td>KeymapEnhanced: Close all</td>
+        <td>CloseOther: Close to right</td>
+      </tr>
+      <tr>
+        <td>&#39;</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>z</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>x</td>
+        <td></td>
+        <td>KeymapEnhanced: Toggle status bar</td>
+      </tr>
+      <tr>
+        <td>c</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>v</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>b</td>
+        <td></td>
+        <td>KeymapEnhanced: Toggle tabs</td>
+      </tr>
+      <tr>
+        <td>n</td>
+        <td></td>
+        <td>KeymapEnhanced: New window</td>
+      </tr>
+      <tr>
+        <td>m</td>
+        <td>MarkdownPreview: Preview</td>
+        <td>KeymapEnhanced: Toggle menu</td>
+      </tr>
+      <tr>
+        <td>,</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>.</td>
+        <td></td>
+        <td>KeymapEnhanced: Closetag</td>
+      </tr>
+      <tr>
+        <td>/</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>ctrl+m, ctrl+&lt;key&gt;</h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th title="Field #1">ctrl+m, ctrl+&lt;key&gt;</th>
+        <th title="Field #2">(without modifier)</th>
+        <th title="Field #3">+ctrl</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>0</td>
+        <td>Method: Move method after first</td>
+        <td>Method: Create method after first</td>
+      </tr>
+      <tr>
+        <td>-</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>=</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>q</td>
+        <td>Method: Uncomment all</td>
+        <td>Method: Comment all except current</td>
+      </tr>
+      <tr>
+        <td>w</td>
+        <td></td>
+        <td>KeymapEnhanced: Wrap lines</td>
+      </tr>
+      <tr>
+        <td>e</td>
+        <td>WrapStatement: unwrap</td>
+        <td>WrapStatement: wrap</td>
+      </tr>
+      <tr>
+        <td>r</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>t</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>y</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>u</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>i</td>
+        <td>Method: Move method to private</td>
+        <td>Method: Create private method</td>
+      </tr>
+      <tr>
+        <td>o</td>
+        <td>Method: Move method to protected</td>
+        <td>Method: Create protected method</td>
+      </tr>
+      <tr>
+        <td>p</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>[</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>]</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>a</td>
+        <td>AlignHashTable: unalign</td>
+        <td>AlignHashTable: align</td>
+      </tr>
+      <tr>
+        <td>s</td>
+        <td>Method: Select current method body</td>
+        <td>Method: Select current method</td>
+      </tr>
+      <tr>
+        <td>d</td>
+        <td></td>
+        <td>Method: Delete method</td>
+      </tr>
+      <tr>
+        <td>f</td>
+        <td></td>
+        <td>Method: Go to first method</td>
+      </tr>
+      <tr>
+        <td>g</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>h</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>j</td>
+        <td>JoinChainCall: join</td>
+        <td>JoinChainCall: unjoin</td>
+      </tr>
+      <tr>
+        <td>k</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>l</td>
+        <td>Method: Move method to last</td>
+        <td>Method: Create method after last</td>
+      </tr>
+      <tr>
+        <td>;</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>&#39;</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>z</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>x</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>c</td>
+        <td></td>
+        <td>Method: Clone method</td>
+      </tr>
+      <tr>
+        <td>v</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>b</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>n</td>
+        <td></td>
+        <td>Method: Create method space</td>
+      </tr>
+      <tr>
+        <td>m</td>
+        <td></td>
+        <td>Method: Insert method name to mark</td>
+      </tr>
+      <tr>
+        <td>,</td>
+        <td></td>
+        <td>Method: Create method before current</td>
+      </tr>
+      <tr>
+        <td>.</td>
+        <td></td>
+        <td>Method: Create method after current</td>
+      </tr>
+      <tr>
+        <td>/</td>
+        <td></td>
+        <td>Method: Go to last method</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>ctrl+n, ctrl+&lt;key&gt;</h3>
+
+  <table border="1">
+    <thead>
+      <tr>
+        <th title="Field #1">ctrl+n, ctrl+&lt;key&gt;</th>
+        <th title="Field #2">(no modifier)</th>
+        <th title="Field #3">+ctrl</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>q</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>w</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>e</td>
+        <td>ProjectFiles: Show erb</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>r</td>
+        <td></td>
+        <td>ProjectFiles: Show routes</td>
+      </tr>
+      <tr>
+        <td>t</td>
+        <td>ProjectFiles: Toggle test</td>
+        <td>ProjectFiles: Show tests</td>
+      </tr>
+      <tr>
+        <td>y</td>
+        <td>ProjectFiles: Show yaml</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>u</td>
+        <td></td>
+        <td>ProjectFiles: Show all folders</td>
+      </tr>
+      <tr>
+        <td>i</td>
+        <td></td>
+        <td>ProjectFiles: Show migrations</td>
+      </tr>
+      <tr>
+        <td>o</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>p</td>
+        <td></td>
+        <td>ProjectFiles: Print project files</td>
+      </tr>
+      <tr>
+        <td>[</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>]</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>a</td>
+        <td>ProjectFiles: Show haml</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>s</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>d</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>f</td>
+        <td>ProjectFiles: Show coffee</td>
+        <td>ProjectFiles: Show configs</td>
+      </tr>
+      <tr>
+        <td>g</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>h</td>
+        <td>ProjectFiles: Show html</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>j</td>
+        <td>ProjectFiles: Show js</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>k</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>l</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>;</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>&#39;</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>z</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>x</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>c</td>
+        <td>ProjectFiles: Show css</td>
+        <td>ProjectFiles: Show controllers</td>
+      </tr>
+      <tr>
+        <td>v</td>
+        <td></td>
+        <td>ProjectFiles: Show views</td>
+      </tr>
+      <tr>
+        <td>b</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>n</td>
+        <td>ProjectFiles: Show all</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>m</td>
+        <td></td>
+        <td>ProjectFiles: Show models</td>
+      </tr>
+      <tr>
+        <td>,</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>.</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>/</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
