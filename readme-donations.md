@@ -24,11 +24,9 @@ get more visitors:
   be listed at the bottom of main page of sublime-enhanced repository (or any
   repository of sublime-enhanced on your choise)
 
-- $500 - bugfix request will be performed ASAP
+- $500 - bugfix or feature request will be performed ASAP
 
-- $1000 - feature request to will be performed ASAP
-
-- $2000 - I can do a new plugin on request; please contact me to see if it
+- [more] - I can do a new plugin on request; please contact me to see if it
   possible to do your idea as plugin
 
 - [more] - I hereby promise to travel to your location for several days and meet
