@@ -51,6 +51,8 @@ if you considering making donation.
 
 [![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GRYNNLPTV9BRG)
 
+[![Donate](https://www.coinbase.com/assets/buttons/donation_small-77a6e527206c0407ffd8b2e8b76556b0.png)](https://www.coinbase.com/checkouts/47bd6412c8fbfbf66dd6a481c0e8327e)
+
 You also can help the project by opening pull requests or issues, or by staring
 plugins you like.
 
@@ -83,7 +85,7 @@ and [readme-keymap.md](https://github.com/shagabutdinov/sublime-enhanced/blob/ma
 
 - For donators: [readme-donations.md](https://github.com/shagabutdinov/sublime-enhanced/blob/master/readme-donations.md)
 
-- Complete plugin list: [readme-list.md](https://github.com/shagabutdinov/sublime-enhanced/blob/master/readme-list.md)
+- Complete plugins list: [readme-list.md](https://github.com/shagabutdinov/sublime-enhanced/blob/master/readme-list.md)
 
 - A bit of explanations of sublime-enhanced: [readme-philosophy.md](https://github.com/shagabutdinov/sublime-enhanced/blob/master/readme-philosophy.md)
 

@@ -37,8 +37,9 @@ get more visitors:
 
 Please, specify link at your github account when donating so I'll be able to
 contact you and share plugins. If you forgot to do it, then just drop me github
-message with date, time and amount of donation. Please wait 48 hours (I have
-only two hands) before contact me again in a case if I'll not contact you back.
+message with date, time, amount and email of donation. Please wait 48 hours (I
+have only two hands) before contact me again in a case if I'll not contact you
+back.
 
 Note if you donate anything more or qual than $50 you'll automatically get
 access to everything above in the list (e.g. if you donate $250, your message
@@ -56,3 +57,5 @@ wait for my reply ("won't fix" issues will be closed only in forks); when
 you'll donate refer to opened issue in donation message.
 
 [![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GRYNNLPTV9BRG)
+
+[![Donate](https://www.coinbase.com/assets/buttons/donation_small-77a6e527206c0407ffd8b2e8b76556b0.png)](https://www.coinbase.com/checkouts/47bd6412c8fbfbf66dd6a481c0e8327e)
