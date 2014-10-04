@@ -10,10 +10,10 @@ possible. Or not employ at all. This allows to developer to concentrate around
 task and solve it efficiently without interruptions.
 
 Sublime-enhanced is designed to solve code editing tasks with time as less as
-possible: with few keyboard shortcuts or snippets it is possible to save a lot
+possible: with few keyboard shortcuts or snippets are possible to save a lot
 of time that could be spent on thinking on the task but not typing.
 
-Sublime-enhanced is designed to be mouseless. That means that it is better
-solve all text-editing tasks with keyboard. It is much faster when you get used
-to it. With keyboard you can solve any task but with mouse you can solve only
-few.
+Sublime-enhanced is designed to be mouseless, because several keyboard shortcuts
+or snippets is faster than several mouse clicks. And it is much faster when you
+get used to it. With keyboard you can solve any task but with mouse you can
+solve only few.
