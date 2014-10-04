@@ -20,15 +20,24 @@ a free day you can try full installation.
 
 ![Demo](https://raw.github.com/shagabutdinov/sublime-method/master/demo/demo.gif "Demo")
 
+https://raw.github.com/shagabutdinov/sublime-method/master/demo/demo.gif
+
+(for some strange reason github cached demo aggressevly and it can't be viewed
+directly now)
+
 
 ##### sublime-local-variable
 
 ![Demo](https://raw.github.com/shagabutdinov/sublime-local-variable/master/demo/demo.gif "Demo")
 
+https://raw.github.com/shagabutdinov/sublime-local-variable/master/demo/demo.gif
+
 
 ##### sublime-join-assignment
 
 ![Demo](https://raw.github.com/shagabutdinov/sublime-local-variable/master/demo/demo.gif "Demo")
+
+https://raw.github.com/shagabutdinov/sublime-local-variable/master/demo/demo.gif
 
 
 ### WARNING
