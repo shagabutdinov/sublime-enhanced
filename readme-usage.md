@@ -93,7 +93,7 @@ configuration:
 ##### Goto anything
 
 Primary file navigation tool is "goto anything..." that are mapped under "f1".
-It's default sublime's tool that are extended a bit by "goto-anything-enhanced"
+It's default sublime's tool that are extended by "goto-anything-enhanced"
 plugin. This tool provides ability to quickly open any file using fuzzy search.
 This feature should be used in the case if file name is known prior to manual
 file system navigation.
@@ -104,7 +104,8 @@ file system navigation.
 It allows to predefine sets of files that can be later accessed by keyboard
 shortcuts. For example, it allows use (/controller/|_controller.\w+$) to access
 all controllers in project using fuzzy search (mapped under "ctrl+n, ctrl+c").
-This functionality are provided by "sublime-project-files" plugin.
+This functionality are provided by "[sublime-project-files](http://github.com/shagabutdinov/sublime-project-files)"
+plugin.
 
 When accessing a file that belongs to set that could be specified with regexp,
 this functionality should be used prior to "goto anything" because it makes
@@ -112,16 +113,17 @@ fuzzy search more deterministic (e.g. it is easier to use fuzzy search over 30
 controllers then over 3000 files of project).
 
 By default there a lot of mappings to accessing different file sets. Refer to
-"sublime-project-files" documentation to be able to use this plugin.
+"[sublime-project-files](http://github.com/shagabutdinov/sublime-project-files)"
+documentation to be able to use this plugin.
 
 
 ##### Goto definition
 
 It allows you to jump to the definition of class or method (mapped under
 "ctrl+e"). This is extremely useful when studying source code of libraries or
-colleagues commits. This is default sublime functionality that changed a bit by
-"sublime-goto-definition-enhanced". Refer to this plugin documentation to be
-able to use it correctly.
+colleagues commits. This is default sublime functionality that changed by
+"[sublime-goto-definition-enhanced](http://github.com/shagabutdinov/sublime-goto-definition-enhanced)".
+Refer to this plugin documentation to be able to use it correctly.
 
 
 ##### Search in files
@@ -132,8 +134,8 @@ file name but know a text that this file contains.
 
 Sublime-enhanced provides ability to navigate thorugh search results using
 "goto search next result" (alt+enter), "goto previous search result"
-(alt+shift+enter) features of glorious "sublime-expression" plugin and
-"open search result" (ctrl+enter) of "OpenSearchResult" plugin.
+(alt+shift+enter) features of glorious "[sublime-expression](http://github.com/shagabutdinov/sublime-expression)"
+plugin and"open search result" (ctrl+enter) of "OpenSearchResult" plugin.
 
 
 ##### Filesystem browsing
@@ -144,10 +146,11 @@ browsing:
 - Default's sublime "promt open file" (mapped under "ctrl+u, o") which use OS's
   default "open file" dialog. It allows to open several files at once.
 
-- Plugin-driven navigation provided by "sublime-file-dialog" (mapped under
-  "ctrl+u, cltr+o") which allows to use fuzzy completions and keyboard shortcuts
-  to navigate through files. Refer to "sublime-file-dialog" documentation to
-  be able to use this tool.
+- Plugin-driven navigation provided by "[sublime-file-dialog](http://github.com/shagabutdinov/sublime-file-dialog)"
+  (mapped under "ctrl+u, cltr+o") which allows to use fuzzy completions and
+  keyboard shortcuts to navigate through files. Refer to
+  "[sublime-file-dialog](http://github.com/shagabutdinov/sublime-file-dialog)"
+  documentation to be able to use this tool.
 
 This feature should be used if you want to open a file in directory of currently
 opened file. In other cases use this feature as last resort when opening files.
@@ -205,29 +208,32 @@ feature.
 
 Sublime-enhanced also adds "goto next method" ("alt+n"), "goto previous method"
 ("alt+shift+n") and "toggle method start/end" ("ctrl+alt+n") features that are
-provided by glorious "sublime-method" plugin.
+provided by glorious "[sublime-method](http://github.com/shagabutdinov/sublime-method)"
+plugin.
 
 
 ##### Goto line
 
-Provided by "sublime-goto-line-enhanced" and differs a bit from default "goto
-line" feature. Mapped under "ctrl+g". Very useful when working with exception
-or in pair programming when the number of line referred by somebody else. Refer
-to plugin documentation to be able to use it.
+Provided by "[sublime-goto-line-enhanced](http://github.com/shagabutdinov/sublime-goto-line-enhanced)"
+and differs from default "goto line" feature. Mapped under "ctrl+g". Very
+useful when working with exception or in pair programming when the number of
+line referred by somebody else. Refer to plugin documentation to be able to use
+it.
 
 
 ##### Scroll lines
 
 Primary scrolling tool (mapped under "ctrl+alt+k", "ctrl+alt+i") instead of
 default page up/page down (that are not mapped at all in sublime-enhanced). This
-funtionality provided by "sublime-scroll-lines-enhanced" and differs a bit from
-sublime's default "scroll lines". Referer to plugin documentation to be see the
+funtionality provided by "[sublime-scroll-lines-enhanced](http://github.com/shagabutdinov/sublime-scroll-lines-enhanced)"
+and differs from sublime's default "scroll lines". Referer to plugin documentation to be see the
 difference.
 
 
 ##### Search
 
-Sublime-enhanced replaces default sublime search with "sublime-search-enhanced"
+Sublime-enhanced replaces default sublime search with
+"[sublime-search-enhanced](http://github.com/shagabutdinov/sublime-search-enhanced)"
 plugin to provide navigation abilities of searching throgh files. Mapped under
 ctrl+f ("fuzzy search"), ctrl+shift+f ("fuzzy search backward"), ctrl+alt+f
 ("search"), ctrl+alt+shift+f  ("search backward"). Plugin also contains bunch
@@ -238,26 +244,30 @@ of useful shortcuts that can be found in plugin documentation.
 
 Extremely handy feature which allows to jump/select by empty lines. Mapped under
 "ctrl+i" (up), "ctrl+k" (down) and "ctrl+shift+i" (select up), "ctrl+shift+k"
-(select down). Provided by glorious "sublime-expression" plugin.
+(select down). Provided by glorious "[sublime-expression](http://github.com/shagabutdinov/sublime-expression)"
+plugin.
 
 
 ##### Indentation navigation
 
 Good way to goto/select start/end of "if", "for", "while" and other blocks that
-are indented with spaces or tabs. Provided by "sublime-indentation-navigation"
-plugin. This plugin also provides "select indentation" that works a bit
+are indented with spaces or tabs. Provided by
+"[sublime-indentation-navigation](http://github.com/shagabutdinov/sublime-indentation-navigation)"
+plugin. This plugin also provides "select indentation" that works
 different from sublime's default "select indentation".
 
 
 ##### Goto last edit location
 
 Goto last edit location is really handy feature, mapped under "alt+z" (next),
-"alt+shift+z" (previous) and provided by "sublime-goto-last-edit-enhanced".
+"alt+shift+z
+" (previous) and provided by "[sublime-goto-last-edit-enhanced](http://github.com/shagabutdinov/sublime-goto-last-edit-enhanced)".
 
 
 ##### Marks
 
-Default sublime feature that are extended with "sublime-named-mark" plugin.
+Default sublime feature that are extended with
+"[sublime-named-mark](http://github.com/shagabutdinov/sublime-named-mark)" plugin.
 Mapped under "cltr+shift+q" (insert mark) and "ctrl+q" (goto mark). Plugin
 itself contains some handy features, refer documentation of plugin to study it.
 
@@ -265,10 +275,11 @@ itself contains some handy features, refer documentation of plugin to study it.
 ##### Automatic marks
 
 Marks that are inserted automatically when issuing specified commands. Provided
-by "sublime-incremental-mark" plugin and binded under "alt+r" (next mark),
-"alt+shift+r" (previous mark) and "alt+ctrl+r" (clean incremental marks). This
-feature is handy when used with "goto definition", "goto begin/end of file" -
-you can quickly come back to previous location.
+by "[sublime-incremental-mark](http://github.com/shagabutdinov/sublime-incremental-mark)"
+plugin and binded under "alt+r" (next mark), "alt+shift+r" (previous mark) and
+"alt+ctrl+r" (clean incremental marks). This feature is handy when used with
+"goto definition", "goto begin/end of file" - you can quickly come back to
+previous location.
 
 
 ### Usage: Line navigation
@@ -281,32 +292,36 @@ according to situation.
 ##### Goto character
 
 Move cursor to character in the line. Mapped under "alt+a, &lt;char&gt;" and
-provided by "sublime-goto-character". Usually used with "repeat last command"
-(alt+x) provided by "sublime-repeat-command" plugin. Plugin also provides
-various types of "goto character", refer to its documentation to study all
-types of "goto character".
+provided by "[sublime-goto-character](http://github.com/shagabutdinov/sublime-goto-character)".
+Usually used with "repeat last command" (alt+x) provided by
+"[sublime-repeat-command](http://github.com/shagabutdinov/sublime-repeat-command)"
+plugin. Plugin also provides various types of "goto character", refer to its
+documentation to study all types of "goto character".
 
 
 ##### Goto brackets (various types)
 
 Allows to quickly navigate by various type of brackets (), {}, []: primary
 hotkey is "alt+enter" (goto into brackets), "alt+shift+enter" (goto out of
-brackets) provided by glorious "sublime-expression" plugin. There also hotkeys
-to select in brackets, select in string, goto brackets backward and skip
-brackets. Refer to "sublime-expression" documentation to study brackets/string
-navigation.
+brackets) provided by glorious "[sublime-expression](http://github.com/shagabutdinov/sublime-expression)"
+plugin. There also hotkeys to select in brackets, select in string, goto
+brackets backward and skip brackets. Refer to
+"[sublime-expression](http://github.com/shagabutdinov/sublime-expression)"
+documentation to study brackets/string navigation.
 
 
 ##### Goto previous/next line, word, subword or character
 
 This is default sublime features but it remapped under "alt+ijkl", "ctrl+jl" and
-"alt+ctrl+jl" (+shift works as selection) by "sublime-keymap-enhanced" plugin.
-Refer to plugin documentation to see all bindings.
+"alt+ctrl+jl" (+shift works as selection) by
+"[sublime-keymap-enhanced](http://github.com/shagabutdinov/sublime-keymap-enhanced)"
+plugin. Refer to plugin documentation to see all bindings.
 
 
 ##### Search
 
-Search also can be used to line navigation. Refer to "sublime-search-enhanced"
+Search also can be used to line navigation. Refer to
+"[sublime-search-enhanced](http://github.com/shagabutdinov/sublime-search-enhanced)"
 documentation.
 
 
@@ -316,7 +331,8 @@ Primary actions: goto previous/next token/argument ("alt+,", "alt+.", +shift is
 for arguments), goto start/end of token ("alt+m"), goto/select argument by
 number (alt+&lt;number&gt;, alt+shift+&lt;number&gt;; number is from 1 to 5),
 select token/argument/statement (alt+s, alt+shift+s). This features are part of
-"sublime-statement" plugin, refer to plugin documentation to study it behaviour.
+"[sublime-statement](http://github.com/shagabutdinov/sublime-statement)" plugin,
+refer to plugin documentation to study it behaviour.
 
 
 ### Usage: Multicursors
@@ -342,8 +358,9 @@ Sublime by default have four ways of spawning multicursors:
 
 Sublime-enhanced adds some enhancements over cursors spawning: select
 next/previous occurence of text/word under cursor/selection that are provided
-by "sublime-append-selection" plugin. Primary shortcuts are "alt+c",
-"alt+ctrl+c". Refer to plugin documentation to see all shortcuts.
+by "[sublime-append-selection](http://github.com/shagabutdinov/sublime-append-selection)"
+plugin. Primary shortcuts are "alt+c", "alt+ctrl+c". Refer to plugin
+documentation to see all shortcuts.
 
 Multicursors also can be spawned using "rename local variable"
 (sublime-local-variable plugin) feature or similar.
@@ -378,7 +395,8 @@ that will be released in future.
 This is glorious plugin that allows to reduce plain typing drastically. It
 provides different types of autocompletion. Primary shortcuts is "ctrl+o"
 (complete backward), "ctrl+p" (complete forward). There is more shortcuts, refer
-to "sublime-utocompletion" plugin documentation.
+to "[sublime-autocompletion](http://github.com/shagabutdinov/sublime-autocompletion)"
+plugin documentation.
 
 
 ##### Snippets
@@ -387,35 +405,42 @@ Snippets is very handy tool to write source code. It is highly recommended to
 study snippet system and use snippets abudantly if you are not snippet-user yet.
 Sublime-enhanced snippet system built on top of default sublime's snippets to
 fix various issues and to provide more features. Along with
-"sublime-autocompletion" it reduce  plain typing drastically. Read
-"sublime-snippet-caller" documentation to study sublime-enhanced snippet system.
+"[sublime-autocompletion](http://github.com/shagabutdinov/sublime-autocompletion)"
+it reduce  plain typing drastically. Read
+"[sublime-snippet-caller](http://github.com/shagabutdinov/sublime-snippet-caller)"
+documentation to study sublime-enhanced snippet system.
 
 
 ##### Method manipulation
 
-Glorious "sublime-method" contains a bunch of useful features like "create new
-method" (ctrl+alt+shift+n), "delete method" (ctrl+m, ctrl+d), "move method
-up/down" ("alt+-", "alt+=") and etc. Refer to it documentation to see how to use
-it.
+Glorious "[sublime-method](http://github.com/shagabutdinov/sublime-method)"
+contains a bunch of useful features like "create new method" (ctrl+alt+shift+n),
+"delete method" (ctrl+m, ctrl+d), "move method up/down" ("alt+-", "alt+=") and
+etc. Refer to it documentation to see how to use it.
 
 
 ##### Local variables manipulation
 
 Glorious extract/detach variable from cursor/selection by hotkey ("ctrl+alt+x",
 "ctrl+shift+x" hotkeys). Also provides rename local variable feature
-("alt+shift+x"). Refer to "sublime-local-variable" documentation to see how it
-works.
+("alt+shift+x"). Refer to "[sublime-local-variable](http://github.com/shagabutdinov/sublime-local-variable)"
+documentation to see how it works.
 
 
 ##### Clone file
 
 It is possible to clone file with "ctrl+alt+shift+d" hotkey. Provided by
-"sublime-clone-file" plugin.
+"[sublime-clone-file](http://github.com/shagabutdinov/sublime-clone-file)" plugin.
 
 
 ##### Various optimizations
 
-There are some tasks automated by plugins. Refer to "sublime-formatter",
-"sublime-join-assignment", "sublime-join-chain-call", "sublime-join-statement",
-"sublime-keyword", "join-lines-enhanced", "sublime-semicolon",
-"sublime-wrap-statement" plugins documentation.
+There are some tasks automated by plugins. Refer to
+"[sublime-formatter](http://github.com/shagabutdinov/sublime-formatter)",
+"[sublime-join-assignment](http://github.com/shagabutdinov/sublime-join-assignment)",
+"[sublime-join-chain-call](http://github.com/shagabutdinov/sublime-join-chain-call)",
+"[sublime-join-statement](http://github.com/shagabutdinov/sublime-join-statement)",
+"[sublime-keyword](http://github.com/shagabutdinov/sublime-keyword)",
+"[sublime-join-lines-enhanced](http://github.com/shagabutdinov/sublime-join-lines-enhanced)",
+"[sublime-semicolon](http://github.com/shagabutdinov/sublime-semicolon)",
+"[sublime-wrap-statement](http://github.com/shagabutdinov/sublime-wrap-statement)" plugins documentation.
