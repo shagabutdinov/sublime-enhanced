@@ -24,7 +24,6 @@
 - [GotoLineEnhanced](https://github.com/shagabutdinov/sublime-goto-line-enhanced)
 - [GotoSelection](https://github.com/shagabutdinov/sublime-goto-selection)
 - [IndentationNavigation](https://github.com/shagabutdinov/sublime-indentation-navigation)
-- [JavaScript](https://github.com/shagabutdinov/sublime-java-script)
 - [JoinAssignment](https://github.com/shagabutdinov/sublime-join-assignment)
 - [JoinChainCall](https://github.com/shagabutdinov/sublime-join-chain-call)
 - [JoinLinesEnhanced](https://github.com/shagabutdinov/sublime-join-lines-enhanced)
