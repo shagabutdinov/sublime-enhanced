@@ -28,7 +28,7 @@ a free day you can try full installation.
 
 ##### sublime-join-assignment
 
-![Demo](https://github.com/shagabutdinov/sublime-local-variable/raw/master/demo/demo.gif "Demo")
+![Demo](https://github.com/shagabutdinov/sublime-join-assignment/raw/master/demo/demo.gif "Demo")
 
 
 ### WARNING
