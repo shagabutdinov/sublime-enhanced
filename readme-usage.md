@@ -268,7 +268,7 @@ Goto last edit location is really handy feature, mapped under "alt+z" (next),
 
 Default sublime feature that are extended with
 "[sublime-named-mark](http://github.com/shagabutdinov/sublime-named-mark)" plugin.
-Mapped under "cltr+shift+q" (insert mark) and "ctrl+q" (goto mark). Plugin
+Mapped under "alt+shift+q" (insert mark) and "alt+q" (goto mark). Plugin
 itself contains some handy features, refer documentation of plugin to study it.
 
 
