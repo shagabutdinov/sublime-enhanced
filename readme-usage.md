@@ -14,24 +14,24 @@ This section describes basic keyboard rebindings.
 4. Goto start/end of line: "alt+'"", "+shift" for select
 5. Goto start/end of file: "alt+ctrl+'"", "+shift" for select
 6. Scroll: "cltr+alt+i/j"
-7. Undo/redo: "ctrl+z" (default), "ctrl+r" (rebinded)
+7. Undo/redo: "ctrl+z", "ctrl+r" (rebinded)
 8. Save/save as: "ctrl+s", "ctrl+shift+s;", enter name of file, hit "tab";
    "ctrl+u, ctrl+s" (save), "ctrl+u, s" (save as) for default dialog.
-9. Open file: "ctrl+u, ctrl+o" (enhanced), "ctrl+u, o" (default)
-10. Goto line: "ctrl+g" (default), enter line number (you can use "nm,.jkluio"
+9. Open file: "ctrl+u, ctrl+o" (enhanced), "ctrl+u, o"
+10. Goto line: "ctrl+g", enter line number (you can use "nm,.jkluio"
     key for entering numbers from 0 to 9 accordingly), hit "tab"
 11. Next/previous tab: "ctrl+.,"
 12. Command palette: "alt+\"
 13. Goto anything: "f1"
 14. Goto method: "f2"
-15. Search: ctrl+f (default), alt+f/alt+shift+f (next, previous result)
+15. Search: ctrl+f, alt+f/alt+shift+f (next, previous result)
 16. Search in files: "ctrl+u, ctrl+f"
 17. Open terminal: "f12" (project folder), "ctrl+f12" (current folder) if you
     have "Terminal" plugin installed
 18. New file: "ctrl+shift+n"
 19. New window: "ctrl+u, ctrl+n"
 20. Comment: "ctrl+q" (line), "ctrl+shift+q" (block)
-21. Paste: "ctrl+v" (smart), "ctrl+shift+v" (default)
+21. Paste: "ctrl+v" (smart), "ctrl+shift+v"
 
 While opening or saving files in quick search panel:
 
