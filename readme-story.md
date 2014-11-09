@@ -89,7 +89,7 @@ At some point of todo list (probably, more than 200) some other sublime users
 started to ask me to share plugins with them. I initially intended to release
 all plugins as open source, but at this point I took thought about release. And
 what I saw didn't rejoiced me much. Because I've seen that I can't just threw
-out commits to github and say: "Hey! Now you can use almost hundred plugins! You
+out commits to github and say: "Hey! Now you can use almost fifty plugins! You
 just need to git clone to you plugins folder and that's it!".
 
 Actually I could but I've seen so many software without proper documentation

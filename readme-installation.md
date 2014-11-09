@@ -20,7 +20,7 @@
   git clone git@github.com:shagabutdinov/sublime-devastate-mini.git DevastateMini;
   git clone git@github.com:shagabutdinov/sublime-duplicate-lines-enhanced.git DuplicateLinesEnhanced;
   git clone git@github.com:shagabutdinov/sublime-eval-selection.git EvalSelection;
-  git clone git@github.com:shagabutdinov/sublime-explicit-save-all.git ExplicitSaveAll;
+  git clone git@github.com:shagabutdinov/sublime-delayed-save-all.git DelayedSaveAll;
   git clone git@github.com:shagabutdinov/sublime-expression.git Expression;
   git clone git@github.com:shagabutdinov/sublime-file-dialog.git FileDialog;
   git clone git@github.com:shagabutdinov/sublime-file-list.git FileList;

@@ -10,7 +10,7 @@
 - [DevastateMini](https://github.com/shagabutdinov/sublime-devastate-mini)
 - [DuplicateLinesEnhanced](https://github.com/shagabutdinov/sublime-duplicate-lines-enhanced)
 - [EvalSelection](https://github.com/shagabutdinov/sublime-eval-selection)
-- [ExplicitSaveAll](https://github.com/shagabutdinov/sublime-explicit-save-all)
+- [DelayedSaveAll](https://github.com/shagabutdinov/sublime-delayed-save-all)
 - [Expression](https://github.com/shagabutdinov/sublime-expression)
 - [FileDialog](https://github.com/shagabutdinov/sublime-file-dialog)
 - [FileList](https://github.com/shagabutdinov/sublime-file-list)
