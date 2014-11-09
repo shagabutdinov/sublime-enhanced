@@ -233,7 +233,7 @@ difference.
 ##### Search
 
 Sublime-enhanced replaces default sublime search with
-"[sublime-search-enhanced](http://github.com/shagabutdinov/sublime-search-enhanced)"
+"[sublime-search-panel-enhanced](http://github.com/shagabutdinov/sublime-search-panel-enhanced)"
 plugin to provide navigation abilities of searching throgh files. Mapped under
 ctrl+f ("fuzzy search"), ctrl+shift+f ("fuzzy search backward"), ctrl+alt+f
 ("search"), ctrl+alt+shift+f  ("search backward"). Plugin also contains bunch
@@ -321,7 +321,7 @@ plugin. Refer to plugin documentation to see all bindings.
 ##### Search
 
 Search also can be used to line navigation. Refer to
-"[sublime-search-enhanced](http://github.com/shagabutdinov/sublime-search-enhanced)"
+"[sublime-search-panel-enhanced](http://github.com/shagabutdinov/sublime-search-panel-enhanced)"
 documentation.
 
 
