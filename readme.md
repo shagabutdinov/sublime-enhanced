@@ -23,12 +23,12 @@ a free day you can try full installation.
 
 ##### [sublime-local-variable](https://github.com/shagabutdinov/sublime-local-variable)
 
-![Demo](https://github.com/shagabutdinov/sublime-local-variable/raw/master/demo.gif "Demo")
+![Demo](https://github.com/shagabutdinov/sublime-enhanced-demos/raw/master/local_variable.gif "Demo")
 
 
 ##### [sublime-join-assignment](https://github.com/shagabutdinov/sublime-join-assignment)
 
-![Demo](https://github.com/shagabutdinov/sublime-join-assignment/raw/master/demo.gif "Demo")
+![Demo](https://github.com/shagabutdinov/sublime-enhanced-demos/raw/master/join_assignment.gif "Demo")
 
 
 ### WARNING
