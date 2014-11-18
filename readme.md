@@ -74,7 +74,7 @@ plugins you like.
 
 ### Default keybinding activation
 
-Keymaps listed in readme's disabled by default. You should add next line to your
+Keymaps listed in readmes are disabled by default. You should add next line to your
 "User/Preferences.sublime-settings" file ("Preferences: Settings - User" in command
 palette) to enable those keybindings.
 
