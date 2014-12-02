@@ -9,7 +9,7 @@ This set of plugins were designed for 3 purposes:
   2. Common micro-tasks automation
 
 For most people it will be convinient to cherry-pick one or two packages of
-sublime-enhanced that will be useful for them. If you fill like hacker and have
+sublime-enhanced that will be useful for them. If you feel like hacker and have
 a free day you can try full installation.
 
 
@@ -37,8 +37,7 @@ Please read [readme-warning.md](https://github.com/shagabutdinov/sublime-enhance
 [readme-usage.md](https://github.com/shagabutdinov/sublime-enhanced/blob/master/readme-usage.md),
 and [readme-keymap.md](https://github.com/shagabutdinov/sublime-enhanced/blob/master/readme-keymap.md)
 before full installation. Sublime-enhanced has a lot of unobviuos behavior and
-keyboard shortcuts that replace default sublime's behavior. This information are
-partially covered by this files.
+keyboard shortcuts that replace default sublime's behavior which is partially covered by these files.
 
 
 ### Please, donate!
@@ -53,8 +52,7 @@ if you considering making donation.
 
 [![Donate](https://www.coinbase.com/assets/buttons/donation_small-77a6e527206c0407ffd8b2e8b76556b0.png)](https://www.coinbase.com/checkouts/47bd6412c8fbfbf66dd6a481c0e8327e)
 
-You also can help the project by opening pull requests or issues, or by staring
-plugins you like.
+You also can help the project by opening pull requests or issues, or by staring plugins you like.
 
 
 ### Installation
