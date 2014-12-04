@@ -14,7 +14,7 @@ a free day you can try full installation.
 
 ### Service note
 
-Gihub.com was banned in Russia. It still works in my office but it can not last for long, because no sane service provider would break russian law. So I doubt that I can handle pull requests and issues after github will be finally blocked. This will last for unknown time. Sorry for inconvenience.
+Gihub.com was banned in Russia. It still works in my office but it can not last for long, because no sane internet provider would break russian law. So I doubt that I can handle pull requests and issues after github will be finally blocked. This will last for unknown time. Sorry for inconvenience.
 
 
 ### Quick demos
