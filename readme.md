@@ -31,6 +31,17 @@ a free day you can try full installation.
 ![Demo](https://github.com/shagabutdinov/sublime-enhanced-demos/raw/master/join_assignment.gif "Demo")
 
 
+### Default keybinding activation
+
+Keymaps listed in readmes are disabled by default. You should add next line to your
+"User/Preferences.sublime-settings" file ("Preferences: Settings - User" in command
+palette) to enable those keybindings.
+
+```
+"sublime_enhanced_keybindings": true,
+```
+
+
 ### WARNING
 
 Please read [readme-warning.md](https://github.com/shagabutdinov/sublime-enhanced/blob/master/readme-warning.md),
@@ -68,17 +79,6 @@ You also can help the project by opening pull requests or issues, or by staring 
   * enter package name
   * hit "enter"
   * wait
-
-
-### Default keybinding activation
-
-Keymaps listed in readmes are disabled by default. You should add next line to your
-"User/Preferences.sublime-settings" file ("Preferences: Settings - User" in command
-palette) to enable those keybindings.
-
-```
-"sublime_enhanced_keybindings": true,
-```
 
 
 ### Usage
