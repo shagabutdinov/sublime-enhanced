@@ -3,6 +3,14 @@
 Please, read this section carefully before installation; otherwise you likely
 won't be able to use sublime normally after installation.
 
+Keymaps listed in readmes are disabled by default. You should add next line to your
+"User/Preferences.sublime-settings" file ("Preferences: Settings - User" in command
+palette) to enable those keybindings.
+
+```
+"sublime_enhanced_keybindings": true,
+```
+
 Sublime enhanced provides replacements for default sublime actions (e.g.
 navigation, search, goto line, save and other). Some of that replacements can
 work in really unobvious way. Please read "warnings" sections in "readme" for
