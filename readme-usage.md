@@ -22,8 +22,8 @@ This section describes basic keyboard rebindings.
     key for entering numbers from 0 to 9 accordingly), hit "tab"
 11. Next/previous tab: "ctrl+.,"
 12. Command palette: "alt+\"
-13. Goto anything: "f1"
-14. Goto method: "f2"
+13. Goto anything: "ctrl+n", "ctrl+a"
+14. Goto method: "ctrl+n", "ctrl+s"
 15. Search: ctrl+f, alt+f/alt+shift+f (next, previous result)
 16. Search in files: "ctrl+u, ctrl+f"
 17. Open terminal: "f12" (project folder), "ctrl+f12" (current folder) if you
