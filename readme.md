@@ -47,7 +47,7 @@ palette) to enable those keybindings.
 Please read [readme-warning.md](https://github.com/shagabutdinov/sublime-enhanced/blob/master/readme-warning.md),
 [readme-usage.md](https://github.com/shagabutdinov/sublime-enhanced/blob/master/readme-usage.md),
 and [readme-keymap.md](https://github.com/shagabutdinov/sublime-enhanced/blob/master/readme-keymap.md)
-before full installation. Sublime-enhanced has a lot of unobviuos behavior and
+before full installation. Sublime-enhanced has a lot of unobvious behavior and
 keyboard shortcuts that replace default sublime's behavior which is partially covered by these files.
 
 
