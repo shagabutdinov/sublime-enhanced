@@ -51,15 +51,6 @@ before full installation. Sublime-enhanced has a lot of unobviuos behavior and
 keyboard shortcuts that replace default sublime's behavior which is partially covered by these files.
 
 
-### Please, donate!
-
-Please, support this project by making a donation. You can download and use
-everything for free but this does not mean that tips is not expected.
-
-[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GRYNNLPTV9BRG)
-
-[![Donate](https://www.coinbase.com/assets/buttons/donation_small-77a6e527206c0407ffd8b2e8b76556b0.png)](https://www.coinbase.com/checkouts/47bd6412c8fbfbf66dd6a481c0e8327e)
-
 You also can help the project by opening pull requests or issues, or by watching/staring plugins you like.
 
 
@@ -112,8 +103,6 @@ and [readme-keymap.md](https://github.com/shagabutdinov/sublime-enhanced/blob/ma
 ### Information reference
 
 * Warnings that should be read before installation: [readme-warning.md](https://github.com/shagabutdinov/sublime-enhanced/blob/master/readme-warning.md)
-
-* For donators: [readme-donations.md](https://github.com/shagabutdinov/sublime-enhanced/blob/master/readme-donations.md)
 
 * Complete plugins list: [readme-list.md](https://github.com/shagabutdinov/sublime-enhanced/blob/master/readme-list.md)
 
