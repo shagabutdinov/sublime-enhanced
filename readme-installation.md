@@ -13,7 +13,7 @@
   git clone git@github.com:shagabutdinov/sublime-align-cursors.git AlignCursors;
   git clone git@github.com:shagabutdinov/sublime-align-hash-table.git AlignHashTable;
   git clone git@github.com:shagabutdinov/sublime-append-selection.git AppendSelection;
-  git clone git@github.com:shagabutdinov/sublime-autocompletion.git Autocompletion;
+  git clone git@github.com:shagabutdinov/sublime-autocompletion.git AutocompletionFuzzy;
   git clone git@github.com:shagabutdinov/sublime-clone-file.git CloneFile;
   git clone git@github.com:shagabutdinov/sublime-close-other.git CloseOther;
   git clone git@github.com:shagabutdinov/sublime-context.git Context;
@@ -59,6 +59,7 @@
   git clone git@github.com:shagabutdinov/sublime-statement.git Statement;
   git clone git@github.com:shagabutdinov/sublime-status-message.git StatusMessage;
   git clone git@github.com:shagabutdinov/sublime-enhanced.git SublimeEnhanced;
+  git clone git@github.com:wbond/sublime_terminal.git Terminal
   git clone git@github.com:shagabutdinov/sublime-terminal-project-folder.git TerminalProjectFolder;
   git clone git@github.com:shagabutdinov/sublime-toggle-wrap.git ToggleWrap;
   git clone git@github.com:shagabutdinov/sublime-utilities.git Utilities;
