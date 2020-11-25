@@ -1,5 +1,7 @@
 # SublimeEnhanced
 
+**Deprecation notice: I've migrated to the vscode a while ago (due to better support of the language servers) and dropped the support for sublime packages. It was a good time spent with sublime but unfortunately, it's over. Feel free to reach out if you want to take over the maintenance of one (or more) of the plugins. Thanks!**
+
 Set of plugins for beloved sublime text editor.
 
 This set of plugins were designed for 3 purposes:
